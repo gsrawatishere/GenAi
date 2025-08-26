@@ -1,0 +1,25 @@
+{
+  "name": "gen-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsrawatishere/GenAi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/gsrawatishere/GenAi/issues"
+  },
+  "homepage": "https://github.com/gsrawatishere/GenAi#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "js-tiktoken": "^1.0.21"
+  }
+}
