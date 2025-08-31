@@ -4,7 +4,7 @@ import { QdrantVectorStore } from "@langchain/qdrant";
 import dotenv from "dotenv";
 dotenv.config();
 
-process.env.OPENAI_API_KEY = process.env.GEMINI_API_KEY; // trick LangChain
+
 
 const pdf = "./atomichabits.pdf";
 
@@ -13,7 +13,7 @@ async function init() {
   const docs = await loader.load();
 
   const embeddings = new OpenAIEmbeddings({
-    apiKey : "AIzaSyBH8HxL4APXOqAN-StZkXLbSW7so1wBTCE",
+    apiKey : process.env.GEMINI_API_KEY,
     model: "text-embedding-004",
     configuration: {
       baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
